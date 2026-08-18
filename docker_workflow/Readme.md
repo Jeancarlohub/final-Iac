@@ -11,10 +11,10 @@ docker run -d -p 8080:5000 app-saludo-dmc-01
 curl http://localhost:8080/saludo
 
 # Tagear la imagen
-docker tag app-saludo-dmc-01:latest hansleolml/app-saludo-dmc-01:v2.0
+docker tag app-saludo-dmc-01:latest jeancdocker/app-saludo-dmc-01:v2.0
 
 # Logearse a DockerHub
 docker login
 
 # Subimos la imagen a DockerHub
-docker push hansleolml/app-saludo-dmc-01:v2.0
+docker push jeancdocker/app-saludo-dmc-01:v2.0
